@@ -16,5 +16,5 @@
  StartupWMClass=gqradio
  Encoding=UTF-8
 -Categories=Application;AudioVideo;
-+Categories=GTK;Audio;
++Categories=GTK;Audio;Tuner;
 +# vi: encoding=utf-8
