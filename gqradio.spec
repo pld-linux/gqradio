@@ -1,20 +1,19 @@
 Summary:	X11 tuner radio
-Summary(pl):	X11 tuner radiowy
+Summary(pl):	Tuner radiowy dla X11
 Name:		gqradio
-Version:	0.6.0
+Version:	1.9.1
 Release:	1
-License:	GPL (?)
+License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/gqmpeg/%{name}-%{version}.tar.gz
-# Source0-md5:	b380319210df345014cbc570bd328628
+# Source0-md5:	88a8cea682ff2c597d41eb21e9a4534d
 URL:		http://gqmpeg.sourceforge.net/radio.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	gdk-pixbuf-devel
-BuildRequires:	gtk+-devel
+BuildRequires:	gtk+2-devel >= 2.2.0
+BuildRequires:	libpng-devel
 BuildRequires:	libtool
-BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -28,10 +27,11 @@ graficznym.
 %setup -q
 
 %build
-rm -f missing
+%{__gettextize}
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
+%{__autoheader}
 %{__automake}
 %configure
 %{__make}
@@ -40,19 +40,17 @@ rm -f missing
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	desktopdir=%{_applnkdir}/Multimedia \
-	desktop_DATA=gqradio.desktop \
-	icondir=%{_pixmapsdir} \
-	icon_DATA=gqradio.png
+	DESTDIR=$RPM_BUILD_ROOT
+
+%find_lang %{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS NEWS README SKIN-SPECS TODO
 %attr(755,root,root) %{_bindir}/*
-%{_applnkdir}/Multimedia/*
-%{_pixmapsdir}/*
-%{_datadir}/*
+%{_desktopdir}/*.desktop
+%{_pixmapsdir}/*.png
+%{_datadir}/gqradio
