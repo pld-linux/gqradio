@@ -4,7 +4,7 @@ Name:		gqradio
 Version:	0.6.0
 Release:	1
 License:	GPL (?)
-Group:		X11/Applications/Multimedia
+Group:		X11/Applications/Sound
 Source0:	http://prdownloads.sourceforge.net/gqmpeg/%{name}-%{version}.tar.gz
 URL:		http://gqmpeg.sourceforge.net/radio.html
 BuildRequires:	autoconf
