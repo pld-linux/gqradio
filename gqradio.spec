@@ -2,7 +2,7 @@ Summary:	X11 tuner radio
 Summary(pl):	Tuner radiowy dla X11
 Name:		gqradio
 Version:	1.9.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/gqmpeg/%{name}-%{version}.tar.gz
