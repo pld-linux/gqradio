@@ -5,7 +5,7 @@ Version:	0.6.0
 Release:	1
 License:	GPL (?)
 Group:		X11/Applications/Sound
-Source0:	http://prdownloads.sourceforge.net/gqmpeg/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/gqmpeg/%{name}-%{version}.tar.gz
 URL:		http://gqmpeg.sourceforge.net/radio.html
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -15,7 +15,6 @@ BuildRequires:	gtk+-devel
 BuildRequires:	libtool
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 Gqradio is fine radio tuner working under X11.
