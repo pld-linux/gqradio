@@ -5,7 +5,7 @@ Version:	0.4.1
 Release:	2
 License:	unknown (probably GPL)
 Group:		X11/Applications/Multimedia
-Source0:	http://prdownloads.sourceforge.net/gqmpeg/%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/gqmpeg/%{name}-%{version}.tar.gz
 URL:		http://gqmpeg.sourceforge.net/radio.html
 BuildRequires:	autoconf
 BuildRequires:	automake
