@@ -12,7 +12,7 @@ URL:		http://gqmpeg.sourceforge.net/radio.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	gtk+2-devel >= 2.2.0
+BuildRequires:	gtk+2-devel >= 2:2.2.0
 BuildRequires:	libpng-devel
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
