@@ -6,6 +6,7 @@ Release:	1
 License:	GPL (?)
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/gqmpeg/%{name}-%{version}.tar.gz
+# Source0-md5:	b380319210df345014cbc570bd328628
 URL:		http://gqmpeg.sourceforge.net/radio.html
 BuildRequires:	autoconf
 BuildRequires:	automake
