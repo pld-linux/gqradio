@@ -8,10 +8,10 @@ Group:		X11/Applications/Multimedia
 Source0:	http://prdownloads.sourceforge.net/gqmpeg/%{name}-%{version}.tar.gz
 URL:		http://gqmpeg.sourceforge.net/radio.html
 BuildRequires:	autoconf
-BuildRequires:	automake=
+BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	gdk-pixbuf-devel
-BuildRequires:	gtk+-decel
+BuildRequires:	gtk+-devel
 BuildRequires:	libtool
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
