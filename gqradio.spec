@@ -13,6 +13,7 @@ BuildRequires:	gettext-devel
 BuildRequires:	gdk-pixbuf-devel
 BuildRequires:	gtk+-decel
 BuildRequires:	libtool
+BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
