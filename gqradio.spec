@@ -2,8 +2,8 @@ Summary:	X11 tuner radio
 Summary(pl):	X11 tuner radiowy
 Name:		gqradio
 Version:	0.4.1
-Release:	2
-License:	unknown (probably GPL)
+Release:	3
+License:	GPL (?)
 Group:		X11/Applications/Multimedia
 Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/gqmpeg/%{name}-%{version}.tar.gz
 URL:		http://gqmpeg.sourceforge.net/radio.html
@@ -45,14 +45,12 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	desktopdir=%{_applnkdir}/Multimedia
 
-gzip -9nf AUTHORS NEWS README SKIN-SPECS TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS NEWS README SKIN-SPECS TODO
 %attr(755,root,root) %{_bindir}/*
 %{_applnkdir}/Multimedia/*
 %{_pixmapsdir}/*
