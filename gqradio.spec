@@ -1,11 +1,11 @@
 Summary:	X11 tuner radio
 Summary(pl):	X11 tuner radiowy
 Name:		gqradio
-Version:	0.4.1
-Release:	3
+Version:	0.6.0
+Release:	1
 License:	GPL (?)
 Group:		X11/Applications/Multimedia
-Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/gqmpeg/%{name}-%{version}.tar.gz
+Source0:	http://prdownloads.sourceforge.net/gqmpeg/%{name}-%{version}.tar.gz
 URL:		http://gqmpeg.sourceforge.net/radio.html
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -43,7 +43,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	desktopdir=%{_applnkdir}/Multimedia
+	desktopdir=%{_applnkdir}/Multimedia \
+	desktop_DATA=gqradio.desktop \
+	icondir=%{_pixmapsdir} \
+	icon_DATA=gqradio.png
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -54,3 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_applnkdir}/Multimedia/*
 %{_pixmapsdir}/*
+%{_datadir}/*
