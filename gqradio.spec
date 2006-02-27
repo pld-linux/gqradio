@@ -1,18 +1,18 @@
 Summary:	X11 tuner radio
 Summary(pl):	Tuner radiowy dla X11
 Name:		gqradio
-Version:	1.9.1
-Release:	3
+Version:	1.9.2
+Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/gqmpeg/%{name}-%{version}.tar.gz
-# Source0-md5:	88a8cea682ff2c597d41eb21e9a4534d
+# Source0-md5:	10fded1c080cadd1b260a592772bcbb6
 Patch0:		%{name}-desktop.patch
 URL:		http://gqmpeg.sourceforge.net/radio.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	gtk+2-devel >= 2:2.2.0
+BuildRequires:	gtk+2-devel >= 2:2.4.0
 BuildRequires:	libpng-devel
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
@@ -30,7 +30,7 @@ graficznym.
 %patch0 -p1
 
 %build
-%{__gettextize}
+glib-gettextize -c -f
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
