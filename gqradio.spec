@@ -1,5 +1,5 @@
 Summary:	X11 tuner radio
-Summary(pl):	Tuner radiowy dla X11
+Summary(pl.UTF-8):   Tuner radiowy dla X11
 Name:		gqradio
 Version:	1.9.2
 Release:	1
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Gqradio is fine radio tuner working under X11.
 
-%description -l pl
-Gqradio jest wspania³ym tunerem radiowym pracuj±cym w ¶rodowisku
+%description -l pl.UTF-8
+Gqradio jest wspaniaÅ‚ym tunerem radiowym pracujÄ…cym w Å›rodowisku
 graficznym.
 
 %prep
